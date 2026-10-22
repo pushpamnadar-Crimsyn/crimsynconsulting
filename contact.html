@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#292725"><meta name="description" content="Contact CRIMSYN CONSULTING for executive search, specialist talent hiring and talent advisory enquiries."><title>Contact | CRIMSYN CONSULTING</title><link rel="stylesheet" href="styles.css"></head><body>
+
+<div class="topbar">Talent &nbsp; · &nbsp; Search &nbsp; · &nbsp; Advisory</div>
+<header><div class="container nav">
+  <a class="brand" href="index.html" aria-label="CRIMSYN CONSULTING home"><img class="brand-logo" src="Crimson%20Gold%20Luxury%20Consulting%20Logo.png" alt="CRIMSYN Consulting logo"></a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="index.html" data-page="home">Home</a><a href="about.html" data-page="about">About</a><a href="services.html" data-page="services">Services</a><a href="approach.html" data-page="approach">Our Approach</a><a href="contact.html" class="nav-cta" data-page="contact">Let's Talk ↗</a>
+  </nav>
+</div></header>
+
+<main>
+
+<section class="page-hero" style="--page-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85')"><div class="container"><div class="eyebrow">04 / Start a Conversation</div><h1>Let's find the right talent<br>for what's next.</h1><p>Tell us about your hiring priorities, leadership search or talent market questions. We'd welcome a conversation.</p></div></section>
+
+<section class="section"><div class="container"><div class="split"><div><div class="eyebrow">Let's connect</div><h2>Tell us what you need to hire.</h2><p class="muted">Share a few details about your requirement. This helps us understand the mandate and prepare for a more useful first conversation.</p><div class="contact-box"><span class="label">Email</span><a href="mailto:info@crimsynconsulting.com">info@crimsynconsulting.com</a></div><div class="contact-box" style="margin-top:22px"><span class="label">Phone</span><a href="tel:+918850422677">+91 88504 22677</a></div></div>
+<div class="enquiry-wrap"><form id="enquiry-form" class="enquiry-form">
+<label for="full-name">Name *</label><input id="full-name" name="name" autocomplete="name" required>
+<label for="business-email">Business email *</label><input id="business-email" name="email" type="email" autocomplete="email" required>
+<label for="organisation">Organisation *</label><input id="organisation" name="organisation" autocomplete="organization" required>
+<label for="service">Service of interest *</label><select id="service" name="service" required><option value="">Select a service</option><option>Executive Search</option><option>Specialist Talent Search</option><option>Talent Advisory / Talent Mapping</option><option>Not sure yet</option></select>
+<label for="seniority">Seniority / role category *</label><select id="seniority" name="seniority" required><option value="">Select a category</option><option>Board / C-suite</option><option>Senior leadership</option><option>Mid-level professional</option><option>Specialist / individual contributor</option><option>Multiple roles / workforce project</option></select>
+<label for="timeline">Expected hiring timeline *</label><select id="timeline" name="timeline" required><option value="">Select a timeline</option><option>Immediately / within 30 days</option><option>1–2 months</option><option>3–6 months</option><option>Exploratory / not yet defined</option></select>
+<label for="details">Brief requirement (optional)</label><textarea id="details" name="details" rows="4" placeholder="Role, location, key priorities or other context"></textarea>
+<label class="consent"><input type="checkbox" id="consent" required> I agree that CRIMSYN CONSULTING may use these details to respond to my enquiry. *</label>
+<p class="privacy-note">Please do not include confidential candidate or sensitive personal information. Your details will be used to respond to this business enquiry. A full privacy notice should be published before launch.</p>
+<button class="button" type="submit">Discuss a Hiring Requirement ↗</button>
+<p id="form-message" class="form-message" aria-live="polite"></p>
+</form></div></div></div></section>
+
+</main>
+
+<footer><div class="container"><div class="footer-top">
+  <a href="index.html" class="footer-brand">CRIMSYN<small>TALENT · SEARCH · ADVISORY</small></a>
+  <nav class="footer-nav" aria-label="Footer navigation"><a href="about.html">About</a><a href="services.html">Services</a><a href="approach.html">Our Approach</a><a href="contact.html">Contact</a><a href="mailto:info@crimsynconsulting.com">Email Us</a></nav>
+</div><div class="footer-bottom"><span>© 2026 CRIMSYN CONSULTING. All rights reserved.</span><span>The Right Talent. The Right Impact.</span></div></div></footer>
+<script src="script.js"></script>
+<script>
+document.querySelectorAll('.nav-links a[data-page]').forEach(a=>{if(a.dataset.page==='contact')a.classList.add('active')});
+</script>
+
+</body></html>
