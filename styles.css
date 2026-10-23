@@ -241,3 +241,15 @@ body .hero.hero-cover::after {
   content: none !important;
   background-image: none !important;
 }
+/* CRIMSYN final visual cleanup */
+.split img,
+.page-hero img,
+.statement::before,
+.statement::after {
+  display: none !important;
+  background-image: none !important;
+}
+
+.split {
+  background-image: none !important;
+}
