@@ -183,3 +183,41 @@ footer{background:#302a26;border-top:1px solid rgba(181,139,75,.25)}
 .hero.hero-cover .hero-foot{color:#756e65!important;border-color:rgba(80,70,60,.18)!important}
 @media(max-width:850px){.hero.hero-cover:before{inset:0;background:linear-gradient(180deg,#f4f0e8 0%,rgba(244,240,232,.98) 50%,rgba(244,240,232,.9) 100%)!important;filter:none!important;animation:none!important}.hero.hero-cover:after{right:-8%;top:18%;width:65vw;height:68%;opacity:.045!important;background-image:url("Crimson%20Gold%20Luxury%20Consulting%20Logo.png")!important}.hero.hero-cover .cover-wordmark{color:#292827!important}.hero.hero-cover .hero-copy{color:#625d56!important}}
 @media(max-width:480px){.hero.hero-cover:before{background:linear-gradient(180deg,#f4f0e8 0%,rgba(244,240,232,.98) 100%)!important}.hero.hero-cover:after{right:-15%;top:22%;width:75vw;height:60%;opacity:.04!important}}
+/* CRIMSYN homepage: remove interior photo and show emblem watermark */
+body .hero.hero-cover {
+  background: #f4f0e8 !important;
+  background-image: none !important;
+}
+
+body .hero.hero-cover::before {
+  background: linear-gradient(
+    90deg,
+    rgba(244, 240, 232, 0.98) 0%,
+    rgba(244, 240, 232, 0.93) 45%,
+    rgba(244, 240, 232, 0.78) 100%
+  ) !important;
+  background-image: none !important;
+}
+
+body .hero.hero-cover::after {
+  content: "" !important;
+  position: absolute;
+  right: 3%;
+  top: 7%;
+  width: min(38vw, 500px);
+  height: 86%;
+  background: url("Crimson%20Gold%20Luxury%20Consulting%20Logo.png")
+    center / contain no-repeat !important;
+  opacity: 0.055 !important;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+@media (max-width: 850px) {
+  body .hero.hero-cover::after {
+    right: -8%;
+    width: 65vw;
+    height: 72%;
+    opacity: 0.045 !important;
+  }
+}
