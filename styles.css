@@ -221,3 +221,23 @@ body .hero.hero-cover::after {
     opacity: 0.03 !important;
   }
 }
+
+
+/* Remove interior photography from non-hero sections */
+.statement,
+.page-hero,
+.split {
+  background-image: none !important;
+}
+
+.split img,
+.page-hero img {
+  display: none !important;
+}
+
+/* Remove the old oversized C watermark from the statement panel */
+.statement::before,
+.statement::after {
+  content: none !important;
+  background-image: none !important;
+}
