@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+:root{--ivory:#f4f0e8;--paper:#fbf9f5;--ink:#292725;--muted:#77716a;--crimson:#812337;--wine:#541724;--gold:#b79a65;--line:#dcd5ca;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;line-height:1.7}body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.055;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}.container{width:min(1180px,88%);margin:auto}.topbar{background:var(--ink);color:var(--ivory);padding:8px 0;text-align:center;font-size:9px;letter-spacing:3px;text-transform:uppercase}
+header{position:sticky;top:0;z-index:20;background:rgba(251,249,245,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}.nav{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:flex;align-items:flex-start;justify-content:center;flex-direction:column;min-width:0;line-height:1}.brand-wordmark{width:180px;flex-shrink:0}.brand-name{font-family:'Playfair Display',Georgia,serif;font-size:clamp(27px,2.2vw,35px);font-weight:500;letter-spacing:-1.2px;color:var(--crimson);line-height:1.05}.brand-subtitle{display:block;margin-top:4px;padding-top:4px;border-top:1px solid #bdb4a8;width:100%;text-align:center;font-size:10px;letter-spacing:4px;color:#8c837a;line-height:1.2}.nav-links{display:flex;align-items:center;gap:clamp(14px,2.2vw,30px);font-size:11px;letter-spacing:.2px}.nav-links a{position:relative;padding:9px 0}.nav-links a:not(.nav-cta):after{content:"";position:absolute;left:0;bottom:2px;width:0;height:1px;background:var(--crimson);transition:width .3s}.nav-links a:hover:after,.nav-links a.active:after{width:100%}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--crimson);color:white;padding:14px 20px;font-size:11px;font-weight:600;letter-spacing:.3px;border:1px solid var(--crimson);transition:background .25s,transform .25s}.nav-cta:hover,.button:hover{background:var(--wine);transform:translateY(-2px)}
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:2.7px;text-transform:uppercase;color:var(--crimson)}h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif;font-weight:400;line-height:1.13}h1{font-size:clamp(48px,7vw,92px);letter-spacing:-2.8px;margin:24px 0}h2{font-size:clamp(34px,4.6vw,59px);letter-spacing:-1.3px;margin:18px 0 24px}h3{font-size:27px}p{margin-top:0}.muted,.section-intro{color:var(--muted)}.section-intro{max-width:650px;font-size:15px}.section{padding:105px 0}.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:none}
+.hero{min-height:650px;position:relative;overflow:hidden;background:var(--ivory);display:flex;align-items:center;border-bottom:1px solid var(--line)}.hero:before{content:"";position:absolute;inset:0 0 0 48%;background:linear-gradient(90deg,var(--ivory) 0%,rgba(244,240,232,.5) 28%,rgba(20,18,17,.08) 100%),url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=85') center/cover;filter:saturate(.55);animation:heroZoom 18s ease-in-out infinite alternate}.hero:after{content:"";position:absolute;right:3%;top:7%;width:min(38vw,500px);height:86%;background:url("Crimson%20Gold%20Luxury%20Consulting%20Logo.png") center/contain no-repeat;opacity:.055;mix-blend-mode:multiply;pointer-events:none}.hero-content{position:relative;z-index:1;max-width:720px;padding:100px 0}.hero-copy{max-width:570px;color:#625d56;font-size:16px}.hero-actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:32px}.text-link{font-size:11px;font-weight:700;border-bottom:1px solid var(--crimson);padding-bottom:5px}.hero-foot{display:flex;gap:26px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:76px;padding-top:18px;color:var(--muted);font-size:9px;letter-spacing:1.7px;text-transform:uppercase}
+.page-hero{position:relative;overflow:hidden;min-height:430px;display:flex;align-items:flex-end;background:var(--ink);color:var(--ivory);padding:90px 0 75px}.page-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,26,25,.96) 0%,rgba(28,26,25,.78) 45%,rgba(28,26,25,.24) 100%),var(--page-image,linear-gradient(135deg,#433b38,#9c8270));background-size:cover;background-position:center;transform:scale(1.02);animation:heroZoom 18s ease-in-out infinite alternate}.page-hero .container{position:relative;z-index:1}.page-hero h1{font-size:clamp(48px,7vw,82px);max-width:850px}.page-hero p{max-width:620px;color:#d8d1c8;font-size:15px}.page-hero .eyebrow{color:#d9bd8d}
+.split{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(40px,8vw,110px);align-items:start}.large-copy{font:clamp(21px,2.3vw,29px)/1.65 'Playfair Display',serif}.values{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);margin-top:48px}.value{padding:20px 10px 0 0;font-size:11px;font-weight:600}.value span{display:block;color:var(--crimson);font-size:10px;margin-bottom:8px}.image-band{display:grid;grid-template-columns:1fr 1fr;min-height:390px;background:var(--wine);color:var(--ivory)}.image-band-visual{min-height:390px;background:linear-gradient(0deg,rgba(35,15,19,.2),rgba(35,15,19,.05)),url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85') center/cover;transition:transform .7s}.image-band-copy{padding:clamp(38px,7vw,85px);align-self:center}.image-band-copy .eyebrow{color:#e1c7a0}.image-band-copy p{color:#d9cfd0}
+.dark{background:var(--ink);color:var(--ivory)}.dark .eyebrow{color:#d9a0aa}.dark .section-intro,.dark .muted{color:#c2bdb6}.services-heading{display:flex;justify-content:space-between;gap:45px;align-items:end;margin-bottom:48px}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #55514d}.service-card{padding:34px 28px 22px 0;border-bottom:1px solid #55514d;transition:background .3s}.service-card+.service-card{padding-left:28px;border-left:1px solid #55514d}.service-number{color:#d9a0aa;font-size:10px;letter-spacing:2px}.service-card h3{font-size:31px;margin:24px 0 15px}.service-card p,.service-card ul{color:#c2bdb6;font-size:12px}.service-card li{margin-bottom:7px}.service-card ul{padding-left:17px}
+.process-grid{display:grid;grid-template-columns:repeat(5,1fr);margin-top:50px;border-top:1px solid var(--line)}.process-step{padding:24px 15px 0 0}.process-step+.process-step{padding-left:17px;border-left:1px solid var(--line)}.process-step span{color:var(--crimson);font-size:10px;letter-spacing:2px}.process-step h3{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;margin:14px 0 8px}.process-step p{color:var(--muted);font-size:12px}
+.functions{background:var(--ivory)}.function-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:40px;border-top:1px solid var(--line);border-left:1px solid var(--line)}.function-item{padding:22px 18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px}.function-item span{display:block;color:var(--crimson);font-size:10px;margin-bottom:8px}.engagement-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 45px;margin-top:35px}.engagement{padding:22px 0;border-top:1px solid var(--line)}.engagement h3{font-size:21px;margin-bottom:7px}.engagement p{color:var(--muted);font-size:12px;margin:0}
+.statement{background:var(--crimson);color:white;padding:90px 0}.statement blockquote{max-width:900px;margin:0;font:clamp(31px,4.8vw,60px)/1.25 'Playfair Display',serif}.statement p{margin:25px 0 0;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#f1dde0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:45px}.contact-box{border-top:1px solid var(--line);padding-top:22px}.contact-box .label{display:block;color:var(--muted);font-size:9px;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:8px}.contact-box a{overflow-wrap:anywhere}.contact-box a:hover{color:var(--crimson)}.contact-panel{background:var(--ivory);padding:clamp(30px,5vw,60px);margin-top:60px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+footer{background:var(--ink);color:var(--ivory);padding:42px 0 28px}.footer-top{display:flex;justify-content:space-between;gap:30px;align-items:center}.footer-brand{font:22px 'Playfair Display',serif;letter-spacing:3px}.footer-brand small{display:block;color:#beb8b1;font:9px 'DM Sans',sans-serif;letter-spacing:2px;margin-top:8px}.footer-nav{display:flex;flex-wrap:wrap;gap:20px;font-size:10px}.footer-nav a:hover{color:#e0bd8b}.footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #4a4743;padding-top:20px;margin-top:30px;color:#beb8b1;font-size:9px}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.07)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+@media(max-width:850px){.nav{align-items:flex-start;padding:12px 0 17px;flex-direction:column;gap:8px}.brand-logo{width:160px;height:68px}.nav-links{gap:17px;flex-wrap:wrap}.nav-cta{padding:9px 12px}.hero{min-height:600px}.hero:before{inset:0;background:linear-gradient(90deg,rgba(244,240,232,.97),rgba(244,240,232,.78)),url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80') center/cover}.hero-content{padding:80px 0}.hero h1{letter-spacing:-1.5px}.hero-foot{margin-top:55px}.section{padding:75px 0}.split{grid-template-columns:1fr;gap:20px}.values{grid-template-columns:repeat(3,1fr);row-gap:18px}.services-heading{display:block}.services-grid{grid-template-columns:1fr}.service-card,.service-card+.service-card{padding:27px 0;border-left:0}.process-grid{grid-template-columns:repeat(2,1fr);row-gap:12px}.process-step,.process-step+.process-step{padding:20px 12px 0 0;border-left:0}.function-grid{grid-template-columns:repeat(2,1fr)}.image-band{grid-template-columns:1fr}.image-band-visual{min-height:260px}.contact-grid{grid-template-columns:1fr;gap:28px}.contact-panel,.footer-top,.footer-bottom{align-items:flex-start;flex-direction:column}.page-hero{min-height:390px;padding:75px 0 60px}}
+@media(max-width:480px){.container{width:90%}.nav-links{font-size:10px;gap:12px}.hero h1{font-size:45px}.hero-copy{font-size:14px}.hero-foot{gap:10px}.values{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:1fr}.function-grid{grid-template-columns:1fr 1fr}.engagement-grid{grid-template-columns:1fr}.footer-nav{gap:14px}.page-hero h1{font-size:46px}.contact-panel .button{width:100%}}
+
+.enquiry-wrap{background:var(--ivory);padding:clamp(25px,4vw,45px)}.enquiry-form{display:grid;gap:9px}.enquiry-form label{font-size:11px;font-weight:600;margin-top:8px}.enquiry-form input:not([type=checkbox]),.enquiry-form select,.enquiry-form textarea{width:100%;font:13px 'DM Sans',sans-serif;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:0;padding:13px 12px;outline:none}.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{border-color:var(--crimson)}.enquiry-form .consent{display:flex;align-items:flex-start;gap:10px;font-weight:400;line-height:1.5}.consent input{margin-top:4px;accent-color:var(--crimson)}.privacy-note,.form-message{font-size:10px;color:var(--muted)}.enquiry-form .button{cursor:pointer;margin-top:10px;width:100%}
+
+/* CRIMSYN signature art direction — dark architectural luxury, no people photography */
+:root{--ivory:#eee7da;--paper:#101214;--ink:#111315;--muted:#b6b0a7;--crimson:#a51f36;--wine:#571622;--gold:#b59a6b;--line:rgba(238,231,218,.18);--white:#fff}
+body{background:#101214;color:var(--ivory)}
+.topbar{background:#090a0b;color:#d4c8b3;border-bottom:1px solid rgba(181,154,107,.24)}
+header{background:rgba(15,17,18,.93);border-bottom:1px solid rgba(181,154,107,.22)}
+.nav-links{color:#e7dfd2}
+.brand-logo{width:185px;height:78px}
+.eyebrow{color:#c12d46}
+h1,h2,h3{color:var(--ivory)}
+.hero{background:#101214;border-bottom:1px solid rgba(181,154,107,.22);min-height:720px}
+.hero:before{inset:0 0 0 36%;background:linear-gradient(90deg,#101214 0%,rgba(16,18,20,.9) 19%,rgba(16,18,20,.3) 63%,rgba(16,18,20,.15) 100%),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=90') center/cover;filter:saturate(.55) contrast(1.1);animation:heroZoom 22s cubic-bezier(.2,.7,.2,1) infinite alternate}
+.hero:after{color:rgba(181,154,107,.035)}
+.hero-copy,.muted,.section-intro{color:#bcb5aa}
+.hero-foot{border-color:rgba(181,154,107,.25);color:#a9a094}
+.text-link{border-color:var(--gold)}
+.button,.nav-cta{background:var(--crimson);border-color:var(--crimson)}
+.button:hover,.nav-cta:hover{background:#c02b45;border-color:#c02b45}
+.section{background:#101214}
+.dark{background:#17191b;color:var(--ivory)}
+.dark .section-intro,.dark .muted{color:#bcb5aa}
+.functions{background:#17191b;color:var(--ivory)}
+.function-grid{border-color:rgba(238,231,218,.18)}
+.function-item{border-color:rgba(238,231,218,.18);background:rgba(255,255,255,.015)}
+.function-item span,.process-step span{color:#c12d46}
+.values,.process-grid,.engagement,.contact-box{border-color:rgba(238,231,218,.2)}
+.value{color:var(--ivory)}
+.value span{color:var(--gold)}
+.service-card,.service-card+.service-card{border-color:rgba(238,231,218,.2)}
+.service-number{color:var(--gold)}
+.service-card p,.service-card ul{color:#bcb5aa}
+.process-step p,.engagement p{color:#bcb5aa}
+.image-band{background:#151719;color:var(--ivory)}
+.image-band-visual{background-image:linear-gradient(0deg,rgba(10,11,12,.15),rgba(10,11,12,.05)),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=90');filter:saturate(.55) contrast(1.06)}
+.image-band-copy .eyebrow{color:var(--gold)}
+.statement{background:linear-gradient(115deg,#8d172d,#a51f36 62%,#71172a);position:relative;overflow:hidden}
+.statement:after{content:"C";position:absolute;right:2%;top:-45%;font:clamp(280px,42vw,570px)/1 'Playfair Display',serif;color:rgba(255,255,255,.035);pointer-events:none}
+.page-hero{background:#101214}
+.page-hero:before{background:linear-gradient(90deg,rgba(13,15,16,.98) 0%,rgba(13,15,16,.86) 43%,rgba(13,15,16,.35) 100%),var(--page-image,linear-gradient(135deg,#25282a,#5b5145));filter:saturate(.5) contrast(1.1)}
+.page-hero .eyebrow{color:var(--gold)}
+.contact-panel,.enquiry-wrap{background:#1a1c1e;border:1px solid rgba(181,154,107,.22)}
+.contact-box .label,.enquiry-form label{color:#c2b8a8}
+.enquiry-form input:not([type=checkbox]),.enquiry-form select,.enquiry-form textarea{background:#101214;color:var(--ivory);border-color:rgba(238,231,218,.23)}
+.enquiry-form input::placeholder,.enquiry-form textarea::placeholder{color:#8e887f}
+.privacy-note,.form-message{color:#bcb5aa}
+footer{background:#080a0b;border-top:1px solid rgba(181,154,107,.25)}
+.footer-nav a:hover{color:var(--gold)}
+/* Page transition curtain: cinematic crimson wipe on navigation, restrained scroll reveals */
+body{animation:pageEnter .85s cubic-bezier(.2,.75,.2,1) both}
+body:before{content:"";position:fixed;inset:0;background:#a51f36;z-index:100;pointer-events:none;transform:scaleY(0);transform-origin:top;opacity:0}
+body.page-leaving:before{opacity:1;transform:scaleY(1);transform-origin:bottom;animation:pageLeave .55s cubic-bezier(.77,0,.18,1) forwards}
+@keyframes pageEnter{from{opacity:.35;filter:blur(5px);transform:translateY(10px)}to{opacity:1;filter:blur(0);transform:translateY(0)}}
+@keyframes pageLeave{0%{transform:scaleY(0);transform-origin:bottom}100%{transform:scaleY(1);transform-origin:bottom}}
+.reveal{transform:translateY(34px);transition:opacity 1s ease,transform 1s cubic-bezier(.16,1,.3,1)}
+.reveal.visible{transform:translateY(0)}
+@media(max-width:850px){.hero{min-height:630px}.hero:before{inset:0;background:linear-gradient(90deg,rgba(16,18,20,.96),rgba(16,18,20,.72)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85') center/cover}.brand-logo{width:160px;height:68px}}
+@media(prefers-reduced-motion:reduce){body{animation:none}body.page-leaving:before{animation:none;transform:none}}
+
+
+/* COVER ART DIRECTION — inspired by the CRIMSYN Company Profile cover */
+.hero.hero-cover{min-height:min(850px,calc(100svh - 105px));min-height:max(690px,min(850px,calc(100svh - 105px)));background:#0b0d0f;isolation:isolate;border-bottom:1px solid rgba(181,154,107,.3)}
+.hero.hero-cover:before{content:"";position:absolute;z-index:-1;inset:0 0 0 32%;background-image:linear-gradient(90deg,#0b0d0f 0%,rgba(11,13,15,.82) 12%,rgba(11,13,15,.12) 54%,rgba(11,13,15,.02) 100%),url('crimsyn-staircase.png');background-repeat:no-repeat;background-position:right center;background-size:auto 112%;filter:contrast(1.04);animation:staircaseReveal 1.6s cubic-bezier(.2,.75,.2,1) both,heroZoom 24s cubic-bezier(.2,.7,.2,1) 1.6s infinite alternate}
+.hero.hero-cover:after{content:"";position:absolute;z-index:-1;right:0;bottom:0;top:auto;width:32%;height:30%;background:var(--crimson);clip-path:polygon(100% 0,100% 100%,0 100%);opacity:.96}
+.hero.hero-cover .hero-content{max-width:710px;padding:clamp(74px,10vh,118px) 0 62px}
+.hero.hero-cover .eyebrow{font-size:10px;letter-spacing:4px;color:#d5c6b0;margin-bottom:24px}
+.crimson-dot{color:#bd2943;padding:0 4px}
+.hero.hero-cover .cover-wordmark{font-size:clamp(56px,7.7vw,108px);line-height:.88;letter-spacing:-3.8px;margin:0 0 28px;color:#f1ebdf;text-wrap:balance;text-shadow:0 2px 24px rgba(0,0,0,.15)}
+.hero.hero-cover .cover-wordmark span{font-size:.87em;letter-spacing:-3.2px}
+.cover-rule{height:5px;width:88px;background:var(--crimson);margin:0 0 20px;box-shadow:0 0 28px rgba(165,31,54,.22)}
+.cover-tagline{font-size:clamp(17px,2vw,23px);letter-spacing:.2px;color:#eee7da;margin:0 0 20px}
+.hero.hero-cover .hero-copy{max-width:530px;color:#b9b3a9;font-size:14px;line-height:1.9}
+.hero.hero-cover .hero-actions{margin-top:28px;gap:25px}
+.hero.hero-cover .hero-foot{margin-top:50px;padding-top:17px;border-color:rgba(181,154,107,.23);color:#b5ad9f;gap:20px}
+.hero-caption{position:absolute;right:30px;top:50%;writing-mode:vertical-rl;transform:translateY(-50%);font-size:8px;letter-spacing:3px;text-transform:uppercase;color:rgba(238,231,218,.62);z-index:2}
+@keyframes staircaseReveal{from{opacity:.15;transform:translateX(28px) scale(1.025);filter:blur(5px)}to{opacity:1;transform:translateX(0) scale(1);filter:blur(0)}}
+/* Page chapters share the same architectural darkness, editorial type and crimson cue. */
+.page-hero{min-height:460px;padding-top:100px;padding-bottom:82px;border-bottom:1px solid rgba(181,154,107,.2)}
+.page-hero:after{content:"";position:absolute;right:0;bottom:0;width:15%;height:22%;background:var(--crimson);clip-path:polygon(100% 0,100% 100%,0 100%);opacity:.82;pointer-events:none}
+.page-hero h1{font-size:clamp(49px,6.8vw,83px);letter-spacing:-2.5px;max-width:850px}
+.page-hero p{line-height:1.9;max-width:590px}
+@media(max-width:850px){.hero.hero-cover{min-height:760px;min-height:max(720px,calc(100svh - 145px))}.hero.hero-cover:before{inset:0 0 0 18%;background-size:auto 78%;background-position:right bottom;background-image:linear-gradient(180deg,#0b0d0f 0%,rgba(11,13,15,.96) 35%,rgba(11,13,15,.32) 72%,rgba(11,13,15,.08) 100%),url('crimsyn-staircase.png')}.hero.hero-cover:after{width:35%;height:16%}.hero.hero-cover .hero-content{padding:62px 0 44px}.hero.hero-cover .cover-wordmark{font-size:clamp(56px,11vw,82px);letter-spacing:-2.5px}.hero.hero-cover .cover-wordmark span{letter-spacing:-2px}.hero.hero-cover .hero-foot{margin-top:35px}.hero-caption{right:12px;top:auto;bottom:26%;font-size:7px}.page-hero{min-height:400px;padding:75px 0 60px}}
+@media(max-width:480px){.hero.hero-cover{min-height:760px}.hero.hero-cover:before{inset:0 0 0 0;background-size:auto 62%;background-position:70% bottom;background-image:linear-gradient(180deg,#0b0d0f 0%,rgba(11,13,15,.98) 40%,rgba(11,13,15,.45) 68%,rgba(11,13,15,.12) 100%),url('crimsyn-staircase.png')}.hero.hero-cover .cover-wordmark{font-size:55px;letter-spacing:-2px}.hero.hero-cover .cover-wordmark span{letter-spacing:-1.8px}.hero.hero-cover .hero-copy{font-size:13px;max-width:96%}.hero.hero-cover .hero-foot{font-size:8px;gap:9px}.hero.hero-cover .hero-actions{align-items:flex-start;flex-direction:column;gap:17px}.hero-caption{display:none}}
+@media(prefers-reduced-motion:reduce){.hero.hero-cover:before{animation:none!important;transform:none!important;filter:none!important}}
+
+
+/* APPROVED ART DIRECTION — warm architectural luxury, ivory first, burgundy accents */
+:root{--ivory:#f5f0e7;--paper:#fbf8f2;--ink:#292725;--muted:#766f66;--crimson:#7e1d2b;--wine:#551722;--gold:#b58b4b;--line:#ded4c5;--white:#fff}
+body{background:var(--paper);color:var(--ink)}
+body:after{opacity:.025}
+.topbar{background:#302a26;color:#f4eadc;border-bottom:1px solid rgba(181,139,75,.32)}
+header{background:rgba(251,248,242,.96);border-bottom:1px solid var(--line)}
+.nav-links{color:#39332f}
+.brand-logo{width:185px;height:78px}
+.eyebrow{color:var(--crimson)}
+h1,h2,h3{color:var(--ink)}
+.hero{background:var(--ivory);border-bottom:1px solid var(--line);min-height:700px}
+.hero:before{inset:0 0 0 35%;background:linear-gradient(90deg,rgba(245,240,231,.98) 0%,rgba(245,240,231,.78) 22%,rgba(245,240,231,.12) 65%,rgba(245,240,231,.04) 100%),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=90') center/cover;filter:saturate(.72) brightness(1.12);animation:heroZoom 22s cubic-bezier(.2,.7,.2,1) infinite alternate}
+.hero:after{color:rgba(126,29,43,.045)}
+.hero-copy,.muted,.section-intro{color:#625c55}
+.hero-foot{border-color:var(--line);color:#766f66}
+.text-link{border-color:var(--crimson)}
+.button,.nav-cta{background:var(--crimson);border-color:var(--crimson);color:white}
+.button:hover,.nav-cta:hover{background:#5c1420;border-color:#5c1420}
+.section{background:var(--paper)}
+.dark{background:#551722;color:var(--ivory)}
+.dark h2,.dark h3{color:var(--ivory)}
+.dark .eyebrow{color:#e1c08a}
+.dark .section-intro,.dark .muted{color:#e0d2c9}
+.function-grid{border-color:var(--line)}
+.function-item{border-color:var(--line);background:rgba(255,255,255,.24)}
+.function-item span,.process-step span{color:var(--crimson)}
+.values,.process-grid,.engagement,.contact-box{border-color:var(--line)}
+.value{color:var(--ink)}
+.value span{color:var(--gold)}
+.service-card,.service-card+.service-card{border-color:rgba(245,240,231,.25)}
+.service-number{color:#e1c08a}
+.service-card p,.service-card ul{color:#e0d2c9}
+.process-step p,.engagement p{color:#6d655d}
+.image-band{background:var(--wine);color:var(--ivory)}
+.image-band-visual{background-image:linear-gradient(0deg,rgba(54,20,26,.05),rgba(54,20,26,0)),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=90');filter:saturate(.75) brightness(1.12)}
+.image-band-copy .eyebrow{color:#e1c08a}
+.statement{background:linear-gradient(115deg,#641725,#842538 62%,#6b1a29);position:relative;overflow:hidden}
+.statement:after{color:rgba(255,255,255,.045)}
+.page-hero{background:var(--ivory);color:var(--ink)}
+.page-hero:before{background:linear-gradient(90deg,rgba(245,240,231,.97) 0%,rgba(245,240,231,.82) 43%,rgba(245,240,231,.22) 100%),var(--page-image,linear-gradient(135deg,#e8dfd0,#9f8970));filter:saturate(.72) brightness(1.08)}
+.page-hero h1{color:var(--ink)}
+.page-hero p{color:#625c55}
+.page-hero .eyebrow{color:var(--crimson)}
+.contact-panel,.enquiry-wrap{background:#f2eadf;border:1px solid var(--line)}
+.contact-box .label,.enquiry-form label{color:#766f66}
+.enquiry-form input:not([type=checkbox]),.enquiry-form select,.enquiry-form textarea{background:#fffdf9;color:var(--ink);border-color:#d8cbb9}
+.enquiry-form input::placeholder,.enquiry-form textarea::placeholder{color:#958b7f}
+.privacy-note,.form-message{color:#766f66}
+footer{background:#302a26;border-top:1px solid rgba(181,139,75,.25)}
+.footer-nav a:hover{color:#e1c08a}
+/* Hero cover: welcoming light, sculptural architecture, burgundy detail */
+.hero.hero-cover{min-height:min(850px,calc(100svh - 105px));min-height:max(690px,min(850px,calc(100svh - 105px)));background:var(--ivory);isolation:isolate;border-bottom:1px solid var(--line)}
+.hero.hero-cover:before{content:"";position:absolute;z-index:-1;inset:0 0 0 34%;background-image:linear-gradient(90deg,#f5f0e7 0%,rgba(245,240,231,.91) 14%,rgba(245,240,231,.35) 48%,rgba(245,240,231,.04) 100%),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=90');background-repeat:no-repeat;background-position:center;background-size:cover;filter:saturate(.72) brightness(1.12);animation:staircaseReveal 1.6s cubic-bezier(.2,.75,.2,1) both,heroZoom 24s cubic-bezier(.2,.7,.2,1) 1.6s infinite alternate}
+.hero.hero-cover:after{position:absolute;z-index:-1;right:0;bottom:0;top:auto;width:18%;height:12%;background:var(--crimson);clip-path:polygon(100% 0,100% 100%,0 100%);opacity:.95}
+.hero.hero-cover .hero-content{max-width:800px;padding:clamp(74px,10vh,118px) 0 62px}
+.hero.hero-cover .eyebrow{font-size:10px;letter-spacing:4px;color:var(--crimson);margin-bottom:24px}
+.hero.hero-cover .cover-wordmark{font-size:clamp(45px,5.8vw,78px);line-height:1.02;letter-spacing:-2.8px;margin:0 0 26px;color:var(--ink);text-wrap:balance;text-shadow:none}
+.hero.hero-cover .cover-wordmark span{font-size:1em;letter-spacing:-2.3px;color:var(--crimson)}
+.cover-rule{height:2px;width:70px;background:var(--gold);margin:0 0 20px;box-shadow:none}
+.cover-tagline{font-size:clamp(17px,2vw,23px);letter-spacing:.2px;color:var(--ink);margin:0 0 20px}
+.hero.hero-cover .hero-copy{max-width:530px;color:#625c55;font-size:14px;line-height:1.9}
+.hero.hero-cover .hero-actions{margin-top:28px;gap:25px}
+.hero.hero-cover .hero-foot{margin-top:50px;padding-top:17px;border-color:var(--line);color:#766f66;gap:20px}
+.hero-caption{color:#6d655d}
+.page-hero:after{background:var(--crimson);opacity:.86}
+@media(max-width:850px){.hero{min-height:630px}.hero:before{inset:0;background:linear-gradient(180deg,rgba(245,240,231,.95),rgba(245,240,231,.72)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85') center/cover}.brand-logo{width:160px;height:68px}.hero.hero-cover{min-height:760px;min-height:max(720px,calc(100svh - 145px))}.hero.hero-cover:before{inset:0;background-size:cover;background-position:center;background-image:linear-gradient(180deg,rgba(245,240,231,.98) 0%,rgba(245,240,231,.92) 42%,rgba(245,240,231,.38) 76%,rgba(245,240,231,.1) 100%),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85')}.hero.hero-cover:after{width:22%;height:8%}.hero.hero-cover .hero-content{padding:62px 0 44px}.hero.hero-cover .cover-wordmark{font-size:clamp(42px,8.8vw,68px);letter-spacing:-2px}.hero.hero-cover .cover-wordmark span{letter-spacing:-1.7px}.hero.hero-cover .hero-foot{margin-top:35px}.hero-caption{right:12px;top:auto;bottom:26%;font-size:7px}.page-hero{min-height:400px;padding:75px 0 60px}}
+@media(max-width:480px){.hero.hero-cover{min-height:760px}.hero.hero-cover:before{inset:0;background-size:cover;background-position:center;background-image:linear-gradient(180deg,rgba(245,240,231,.99) 0%,rgba(245,240,231,.94) 48%,rgba(245,240,231,.48) 76%,rgba(245,240,231,.18) 100%),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85')}.hero.hero-cover .cover-wordmark{font-size:clamp(39px,10vw,54px);letter-spacing:-1.7px}.hero.hero-cover .cover-wordmark span{letter-spacing:-1.4px}.hero.hero-cover .hero-copy{font-size:13px;max-width:96%}.hero.hero-cover .hero-foot{font-size:8px;gap:9px}.hero.hero-cover .hero-actions{align-items:flex-start;flex-direction:column;gap:17px}.hero-caption{display:none}}
+
+/* Approved homepage correction: remove the interior photograph and use the original emblem as a restrained watermark. */
+.hero.hero-cover{background:#f4f0e8!important;color:#292827!important;border-bottom:1px solid rgba(80,70,60,.14)!important}
+.hero.hero-cover:before{content:"";position:absolute;z-index:0;inset:0;background:linear-gradient(90deg,#f4f0e8 0%,rgba(244,240,232,.97) 43%,rgba(244,240,232,.84) 100%)!important;filter:none!important;animation:none!important;transform:none!important}
+.hero.hero-cover:after{content:"";position:absolute;z-index:0;right:3%;top:7%;bottom:auto;width:min(38vw,500px);height:86%;background:url("Crimson%20Gold%20Luxury%20Consulting%20Logo.png") center/contain no-repeat!important;opacity:.065!important;mix-blend-mode:multiply;clip-path:none!important;pointer-events:none}
+.hero.hero-cover .hero-content{z-index:1}
+.hero.hero-cover .hero-caption{color:rgba(70,60,52,.38)}
+.hero.hero-cover .eyebrow{color:#8d2035!important}
+.hero.hero-cover .cover-wordmark{color:#292827!important;text-shadow:none!important}
+.hero.hero-cover .hero-copy{color:#625d56!important}
+.hero.hero-cover .hero-foot{color:#756e65!important;border-color:rgba(80,70,60,.18)!important}
+@media(max-width:850px){.hero.hero-cover:before{inset:0;background:linear-gradient(180deg,#f4f0e8 0%,rgba(244,240,232,.98) 50%,rgba(244,240,232,.9) 100%)!important;filter:none!important;animation:none!important}.hero.hero-cover:after{right:-8%;top:18%;width:65vw;height:68%;opacity:.045!important;background-image:url("Crimson%20Gold%20Luxury%20Consulting%20Logo.png")!important}.hero.hero-cover .cover-wordmark{color:#292827!important}.hero.hero-cover .hero-copy{color:#625d56!important}}
+@media(max-width:480px){.hero.hero-cover:before{background:linear-gradient(180deg,#f4f0e8 0%,rgba(244,240,232,.98) 100%)!important}.hero.hero-cover:after{right:-15%;top:22%;width:75vw;height:60%;opacity:.04!important}}
+
+
+/* FINAL HOMEPAGE OVERRIDES: remove all hero photography and use the CRIMSYN emblem watermark */
+.hero.hero-cover{
+  background:var(--ivory) !important;
+  color:var(--ink) !important;
+  min-height:700px;
+  border-bottom:1px solid var(--line);
+}
+.hero.hero-cover:before{
+  content:"";
+  position:absolute;
+  z-index:0;
+  inset:0;
+  background:linear-gradient(90deg,rgba(245,240,231,.98) 0%,rgba(245,240,231,.93) 42%,rgba(245,240,231,.72) 100%) !important;
+  filter:none !important;
+  animation:none !important;
+  transform:none !important;
+}
+.hero.hero-cover:after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  right:3%;
+  top:7%;
+  bottom:auto;
+  width:min(38vw,500px);
+  height:86%;
+  background:url("Crimson%20Gold%20Luxury%20Consulting%20Logo.png") center/contain no-repeat !important;
+  background-color:transparent !important;
+  clip-path:none !important;
+  opacity:.055 !important;
+  mix-blend-mode:multiply;
+  pointer-events:none;
+}
+.hero.hero-cover .hero-content{position:relative;z-index:1}
+.hero.hero-cover .hero-caption{z-index:2;color:rgba(80,55,45,.35)}
+@media(max-width:850px){
+  .hero.hero-cover{min-height:700px}
+  .hero.hero-cover:before{inset:0;background:linear-gradient(180deg,rgba(245,240,231,.98),rgba(245,240,231,.86)) !important}
+  .hero.hero-cover:after{right:-8%;top:12%;width:65vw;height:72%;opacity:.045 !important}
+}
+@media(max-width:480px){
+  .hero.hero-cover:before{inset:0;background:linear-gradient(180deg,rgba(245,240,231,.98),rgba(245,240,231,.88)) !important}
+}
